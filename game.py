@@ -69,8 +69,8 @@ while running:
     # заполнять экран цветом
     screen.fill(screenColor)
     screen.blit(scale,scale_rect)
-    screen.blit(scale_dada,scale_rect)
-    
+    screen.blit(scale_dada,dada_rect)
+
     # рисуем прямоугольный прямоугольник который квадрат  с цветом координатами и размером
     pygame.draw.rect(screen,(100,90,200),[x,y,width_player,height_player])
 
