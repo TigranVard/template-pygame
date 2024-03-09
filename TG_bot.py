@@ -23,6 +23,14 @@ def start (message):
     button1 = telebot.types.InlineKeyboardButton(text="Пьяная Вишня")
     markup.add(button1)
     bot.send_message(message.chat_id, "Привет, выбирай команду", reply_markup=markup)
+    markup = telebot.types.InlineKeyboardMarkup(resize_keyboard=True)
+    button2 = telebot.types.InlineKeyboardButton(text="Хинкальи")
+    markup.add(button2)
+    bot.send_message(message.chat_id, "Привет, выбирай команду", reply_markup=markup)
+    markup = telebot.types.InlineKeyboardMarkup(resize_keyboard=True)
+    button3 = telebot.types.InlineKeyboardButton(text="Оладьи")
+    markup.add(button3)
+    bot.send_message(message.chat_id, "Привет, выбирай команду", reply_markup=markup)
 
 
 @bot.message_handler(content_types=['text','video','document'])
